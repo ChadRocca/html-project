@@ -4,17 +4,24 @@
 
 <!-- This is hidden code to help describe your code aka and internal comment -->
 
- <head>
-    <title>HTML PRACTICE</title>
- </head>
+<head>
+    <title>Oogle</title>
+</head>
 
  <body>
 
- <h2 id="stone_age_web_page"><b>Stone Age Web Page</b></h2>
-	<p>This is an <b>HTML</b> page I created in 
- 	<i>Notepad</i>.<sup>2023</sup> <sub>July</sub></p>
+   <h2 id="stone_age_web_page"><b>Stone Age Web Page</b></h2>
+	   <p>This is an <b>HTML</b> page I created in 
+ 	   <i>Notepad</i>.<sup>2023</sup> <sub>July</sub></p>
 
-    <p><acronym title="Come Have A Drink">Chad</acronym> had a great day! (Mouse over my name)</p>
+      <p><acronym title="Come Have A Drink">Chad</acronym> had a great day! (Mouse over my name)</p>
+
+   <form action="http://www.example.org/search.php">
+      <p>Search</p>
+      <input type="search" name="search"
+         placeholder="Enter keyword" />
+      <input type="submit" Value="Search" />
+   </form>
 
  <h3><u>Potato Slang</u></h3>
 	<a href="#spuds">Spuds</a><br />
@@ -137,19 +144,17 @@
 
    <form action="http://www.example.com/subscribe.php"
       method="get">
-      <p>
-      <u>Follow Me!</u>
-      </p>
-
+      <p>Please enter your email address:</p>
+			<input type="email" name="email">
+			<input type="submit" value="Submit">
    </form>
 <br>
-   <form action="http://www.example.login.php">
-      <p>Username:
-         <input type="text" name="username" size="15" maxlength="30" />
-      </p>
-      <p>Password:
-         <input type="text" name="password" size="15" maxlength="30" />
-      </p>
+   <form action="http://www.example.com/login/" method="post">
+      <label for="username">Username: </label>
+         <input type="text" name="username" required="required" /></title><br />
+      <label for="password">Password: </label>
+         <input type="text" name="password" required="required" />
+      <input type="submit" value="Submit" />
    </form>
 <br>
    <form action="http://www.example.com/comments.php">
@@ -184,6 +189,13 @@
       </select>
    </form>
 <br>
+
+
+
+
+
+
+
 
  <figure>
 	<img src="images/froggy.jpg" alt="Hippity Hoppity" width="400" height="250"/>
